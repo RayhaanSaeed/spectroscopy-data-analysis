@@ -5,20 +5,50 @@ Python-based spectroscopy database and analysis pipeline for processing, standar
 
 ## Overview
 
-This project focuses on the collection, processing, and analysis of spectroscopy data for photofluorescent proteins. The aim of the project is to create a structured and reusable database of excitation and emission spectra collected from journal papers, repositories, and experimental datasets.
+This project focuses on the collection, processing, organisation, and analysis of spectroscopy data for photofluorescent proteins. The aim of the project is to create a structured and reusable database of excitation and emission spectra collected from journal papers, repositories, and experimental datasets.
 
-Using Python, the project automates data cleaning, restructuring, and analysis workflows to allow meaningful comparison between different fluorescent proteins and their spectral behaviour.
+Using Python, the project automates the cleaning, restructuring, standardisation, and export of spectroscopy datasets to allow meaningful comparison between different fluorescent proteins and their spectral behaviour.
+
+---
+
+## Project Structure
+
+The project currently consists of two main Python workflows:
+
+### 1. Data Import and Cleaning Pipeline
+
+This script collates spectroscopy datasets from multiple unstructured sources, including CSV files, repositories, and experimental data exports. The workflow cleans and restructures inconsistent data formats, removes duplicates, handles missing information, and standardises the output into organised CSV datasets suitable for analysis.
+
+Key tasks include:
+- Importing spectroscopy datasets from multiple sources
+- Cleaning inconsistent formatting and messy data
+- Removing duplicate or incomplete entries
+- Standardising wavelength and intensity data
+- Generating structured CSV outputs for downstream analysis
+
+---
+
+### 2. Data Export and Analysis Preparation Pipeline
+
+This script exports selected spectroscopy datasets for groups of proteins into OriginPro for graphical comparison and further data analysis. The workflow allows spectral datasets to be compared visually to identify trends and differences in fluorescence behaviour between proteins.
+
+Key tasks include:
+- Selecting datasets for groups of proteins
+- Exporting processed spectroscopy data into analysis-ready formats
+- Preparing datasets for OriginPro visualisation
+- Supporting graphical comparison of excitation and emission spectra
+- Enabling trend analysis and spectral interpretation
 
 ---
 
 ## Objectives
 
-- Collect spectroscopy datasets from multiple scientific sources
-- Standardise inconsistent and unstructured data formats
-- Automate data cleaning and processing pipelines
-- Extract key spectral features such as peak wavelength and spectral shape
-- Visualise and compare fluorescence behaviour between proteins
-- Produce reusable datasets for future analysis and modelling
+- Collect spectroscopy datasets from scientific literature and repositories
+- Standardise inconsistent and unstructured spectroscopy data
+- Automate data cleaning and restructuring workflows
+- Extract meaningful spectral information from raw datasets
+- Enable comparison and visualisation of fluorescence behaviour between proteins
+- Create reusable datasets for future computational and statistical analysis
 
 ---
 
@@ -34,42 +64,22 @@ Using Python, the project automates data cleaning, restructuring, and analysis w
 
 ### Data Science Techniques
 - Data cleaning and preprocessing
-- Feature extraction
+- Handling unstructured datasets
 - Data standardisation
+- Automated data pipelines
+- Feature extraction
+- Scientific data visualisation
 - Statistical analysis
-- Data visualisation
-- Automated workflow scripting
 
 ---
 
-## Project Workflow
+## Example Features Analysed
 
-1. Collect raw spectroscopy datasets from repositories and literature
-2. Clean and standardise inconsistent formatting
-3. Remove duplicate or incomplete entries
-4. Extract relevant spectral parameters
-5. Store processed data in a structured database
-6. Export datasets for graphical comparison and analysis
-
----
-
-## Example Features Extracted
-
-- Peak emission wavelength
 - Peak excitation wavelength
-- Relative intensity
-- Spectral width
-- Fluorescence trends between proteins
-
----
-
-## Example Outputs
-
-The processed datasets can be used to:
-- Compare fluorescence spectra between proteins
-- Identify trends in spectral behaviour
-- Generate visual overlays of spectral datasets
-- Support future machine learning or statistical analysis
+- Peak emission wavelength
+- Relative fluorescence intensity
+- Spectral trends between proteins
+- Comparative fluorescence behaviour
 
 ---
 
@@ -78,16 +88,18 @@ The processed datasets can be used to:
 - Scientific programming
 - Data pipeline development
 - Handling large unstructured datasets
-- Data manipulation and cleaning
+- Data cleaning and preprocessing
 - Computational analysis
-- Scientific data visualisation
+- Data visualisation
+- Workflow automation
 - Independent project management
 
 ---
 
 ## Future Improvements
 
-- Integration of machine learning models
+- Integration of machine learning models for spectral prediction
 - Automated feature classification
-- Interactive dashboard visualisation
+- Interactive data visualisation dashboards
+- Expansion of dataset coverage and metadata
 - Expanded dataset coverage
